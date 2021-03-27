@@ -5,7 +5,7 @@
 * 使用 `alanway/puppeteer` 镜像, 
 * 文件设置环境变量 `ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true` 跳转 Chromium 的下载. (因为`alanway/puppeteer`里已经下载配置好Chromium了)
 
-以下是参考示例:
+以下是[参考示例](./Dockerfile):
 
 ```Dockerfile
 FROM alanway/puppeteer
@@ -27,7 +27,7 @@ RUN npm install
   * `executablePath: 'google-chrome-stable'` 设置Chrome的的路径
   * `args: ['--no-sandbox', '--disable-setuid-sandbox']` 禁用Chrome的沙盒特性，否则使用本镜像是会出现异常: `Failed to move to new namespace: PID namespaces supported, Network namespace supported, but failed: errno = Operation not permitted`
 
-以下是参考代码:
+以下是[参考代码](./src/test.js):
 
 ```javascript
 const puppeteer = require("puppeteer");
