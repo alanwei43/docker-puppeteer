@@ -9,11 +9,8 @@ if (!fs.existsSync("logs")) {
     const browser = await puppeteer.launch({
         headless: true,
         "userDataDir": "logs/chrome",
-        // "defaultViewport": {
-        //     "isLandscape": false,
-        //     "height": 800,
-        //     "width": 1200
-        // }
+        executablePath: 'google-chrome-stable',
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
 
 
