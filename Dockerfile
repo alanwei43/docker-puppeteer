@@ -1,4 +1,8 @@
-FROM node:12-slim
+FROM node:lts
+
+LABEL maintainer="Alan Wei"
+LABEL description="puppeteer 封装"
+LABEL git="https://github.com/alanwei43/docker-puppeteer"
 
 # Install latest chrome dev package and fonts to support major charsets (Chinese, Japanese, Arabic, Hebrew, Thai and a few others)
 # Note: this installs the necessary libs to make the bundled version of Chromium that Puppeteer
