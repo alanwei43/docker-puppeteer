@@ -3,7 +3,7 @@
 ## Dockerfile 注意事项
 
 * 使用 `alanway/puppeteer` 镜像, 
-* 文件设置环境变量 `ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true` 跳转 Chromium 的下载. (因为`alanway/puppeteer`里已经下载配置好Chromium了)
+* 设置环境变量 `ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true` 跳过 Chromium 的下载. (因为`alanway/puppeteer`里已经下载配置好Chromium了)
 
 以下是[参考示例](./Dockerfile):
 
